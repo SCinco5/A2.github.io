@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="A2 STYLE.css" type="text/css">
+    <!-- external css file -->
+    <title>The Last of Us Part II</title>
+</head>
+<body>
+    <header></header>
+  <audio id="bg-music" src="Love Like You - Steven Universe (music box cover).mp3" loop></audio>
+ <div class ='music-toggle' onclick="toggleMusic()">
+    <!-- a clickable button for the user to either play them or pause -->
+    <span id = 'music-icon'>🛑</span>
+ </div>
+
+
+  <!-- javascript -->
+<script>
+    const music= document.getElementById("bg-music");
+    const icon= document.getElementById("music-icon");
+    // in this section, it basically finds the bg music and the play/pause icon
+
+    window.addEventListener('load', () => {
+        music.volume = 0.4;
+        music.play().catch(() => {});
+        //this section plays the music up to 40%, if the site blocks the autoplay thing, it will ignore the error with the .catch code
+    });
+
+    function toggleMusic() {
+        // it switched between play and pause, whatever the user clicks
+        if (music.paused) {
+            music.play();
+            icon.textContent = "🛑";
+        } else {
+            music.pause();
+            icon.textContent = '🟢'
+        
+        }
+    }
+
+</script>
+ <nav>
+    <ul>
+        <li><a href="A2 home.html">Home</a></li>
+        <li><a href="A2 SP1.html">Marvel's Spiderman</a></li>
+        <li><a href="A2 SP2.html">Marvel's Spiderman 2</a></li>
+        <li><a href="A2 L1.html">The Last of Us Part I</a></li>
+        <li><a href="A2 L2.html">The Last of Us Part II</a></li>
+        <li><a href="A2 COD.html">Call of Duty Modern Warfare</a></li>
+    </ul>
+ </nav>
+
+
+ <section class="game-review">
+    <h2 class="game-title">The Last of Us Part II</h2>
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/vhII1qlcZ4E" allowfullscreen></iframe>
+    </div>
+ </section>
+
+ <div class="game-content">
+     <p class="onli-sub"><strong>Summary</strong></p>
+     <p>The game follows Peter Parker, a 23-year-old college graduate and research assistant who gained superhuman abilities after being bitten by a radioactive spider. Peter is in his eighth year of crime-fighting under his super heroic alter ego of Spider-Man, who has become highly experienced at this point, but struggles to balance his superhero and personal lives. The game's open-world sandbox allows the player to control Spider-Man throughout Manhattan, New York City. Spider-Man fights enemies with his brawler moveset and a wide array of web gadgets. At key points in the story, the player also controls Peter Parker (outside of his Spider-Man identity), Mary Jane Watson, and Miles Morales.</p>
+
+     <p class="onli-sub"><strong>Characters and their Voice Actors</strong></p>
+     <!-- this section showcases the bulleted list of all the characters and voice actors -->
+     <ul>
+         <li>Ashley Johnson as Ellie</li>
+         <li>Troy Baker as Joel</li>
+         <li>Derek Phillips as Jerry</li>
+         <li>Jeffrey Pierce as Tommy</li>
+         <li>Stephen A. Chang as Jesse</li>
+         <li>Ashley Scott as Maria</li>
+         <li>Robert Clotworthy as Seth</li>
+         <li>Shannon Woodward as Dina</li>
+         <li>Laura Bailey as Abby</li>
+         <li>Patrick Fugit as Owen</li>
+         <li>Alejandro Edda as Manny</li>
+         <li>Chelsea Tavares as Nora</li>
+         <li>Ashly Burch as Mel</li>
+         <li>Chase Austin as Jordan</li>
+         <li>Reuben Langdon as Mike</li>
+         <li>Jeffrey Wright as Isaac</li>
+      </ul>
+
+    
+     <p class="onli-sub"><strong>Review</strong></p>
+     <p>The Last of Us Part 2 is a masterpiece worthy of its predecessor. Taking strides forward in nearly every way, Ellie steps into the spotlight and carries the sequel in a manner that feels like the culmination of everything that's made Naughty Dog's blockbuster storytelling so memorable since the original Uncharted on the PlayStation 3. It delivers a layered, emotionally shattering story on top of stealth and action gameplay that improves the first game's mechanics while integrating a bit more of Uncharted's greater mobility and action. But while Part 2 is a thrilling adventure, it still makes time for a stunning, nuanced exploration of the strength and fragility of the human spirit. The PlayStation 4 has one of its best exclusives in one of the generation's best games.</p>
+ </div>
+</section>
+
+
+ <footer>
+    <p>&copy; 2025 GLITCH. All rights reserved.</p>
+ </footer>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="A2 STYLE.css" type="text/css">
+    <!-- external css file -->
+    <title>Call of Duty Modern Warfare</title>
+</head>
+<body>
+    <header></header>
+
+    <audio id="bg-music" src="Love Like You - Steven Universe (music box cover).mp3" loop></audio>
+ <div class ='music-toggle' onclick="toggleMusic()">
+    <span id = 'music-icon'>🛑</span>
+ </div>
+
+<script>
+    const music= document.getElementById("bg-music");
+    const icon= document.getElementById("music-icon");
+    // in this section, it basically finds the bg music and the play/pause icon
+
+    window.addEventListener('load', () => {
+        music.volume = 0.4;
+        music.play().catch(() => {});
+        //this section plays the music up to 40%, if the site blocks the autoplay thing, it will ignore the error with the .catch code
+    });
+
+    function toggleMusic() {
+        // it switched between play and pause, whatever the user clicks
+        if (music.paused) {
+            music.play();
+            icon.textContent = "🛑";
+        } else {
+            music.pause();
+            icon.textContent = '🟢'
+        
+        }
+    }
+
+</script>
+
+ <nav>
+    <ul>
+        <li><a href="A2 home.html">Home</a></li>
+        <li><a href="A2 SP1.html">Marvel's Spiderman</a></li>
+        <li><a href="A2 SP2.html">Marvel's Spiderman 2</a></li>
+        <li><a href="A2 L1.html">The Last of Us Part I</a></li>
+        <li><a href="A2 L2.html">The Last of Us Part II</a></li>
+        <li><a href="A2 COD.html">Call of Duty Modern Warfare</a></li>
+    </ul>
+ </nav>
+
+
+ <section class="game-review">
+    <h2 class="game-title">Call of Duty Modern Wafare</h2>
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/bH1lHCirCGI" allowfullscreen></iframe>
+    </div>
+ </section>
+
+ <div class="game-content">
+     <p class="onli-sub"><strong>Summary</strong></p>
+     <p>Captain Price and the SAS partner with the CIA and the Urzikstani Liberation Force to retrieve stolen chemical weapons. The fight takes you from London to the Middle East and beyond, as this joint task force battles to stop a global war.</p>
+
+    <p class="onli-sub"><strong>Characters and their Voice Actors</strong></p>
+    <!-- this section showcases the bulleted list of all the characters and voice actors -->
+     <ul>
+         <li>Barry Sloane as Captain Price</li>
+         <li>Chad Michael Collins as Alex</li>
+         <li>Claudia Doumit as Farah Karim</li>
+         <li>Debra Wilson as General Lyons</li>
+         <li>Jason Anthony as Otter</li>
+         <li>Rya Kihlstedt as Kate Laswell</li>
+         <li>Stefan Kapicic as Nikolai</li>
+         <li>Konstantin Lavysh as Roman Barkov</li>
+         <li>Nick E. Tarabay as The Butcher</li>
+         <li>Asher Sarraf as Amon</li>
+         <li>Nick Boraine as Colonel Norris</li>
+         <li>Aidan Bristow as Hadir Karim</li>
+         <li>Gene Farber as Kamarov</li>
+         <li>Elliot Knight as Kyle Garrick</li>
+         <li>Zehra Fazal as Ousa</li>
+         <li>LaMonica Garrett as Sgt. Griggs</li>
+         <li>Joel Swetow as The Wolf</li>
+      </ul>
+
+   
+
+     <p class="onli-sub"><strong>Review</strong></p>
+     <p>As someone who's played every single Call of Duty campaign and really missed it last year, the new Modern Warfare is exactly the kind of single-player revival I've been looking for. It introduces welcome new kinds of gameplay moments while executing familiar ones exceptionally well. Sure, its story may not be as provocative as it seems to want to be, but it reestablishes a strong identity for this 16-year-old franchise with a showcase solo shooter experience. Amidst a growing pile of battle royales and looter shooters that just don't scratch that same itchy trigger finger, it felt just like old times.</p>
+</section>
+
+
+ <footer>
+    <p>&copy; 2025 GLITCH. All rights reserved.</p>
+ </footer>
+</body>
+</html>

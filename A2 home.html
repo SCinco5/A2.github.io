@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="A2 STYLE.css" type="text/css">
+    <!-- external css file -->
+    <title>Home Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap');
+        /* to add a different font for the texts */
+    </style>
+</head>
+<body>
+ <header></header> 
+ <audio id="bg-music" src="Love Like You - Steven Universe (music box cover).mp3" loop></audio>
+ <div class ='music-toggle' onclick="toggleMusic()">
+    <!-- a clickable button for the user to either play them or pause -->
+    <span id = 'music-icon'>🛑</span>
+ </div>
+
+ <!-- javascript -->
+<script>
+    const music= document.getElementById("bg-music");
+    const icon= document.getElementById("music-icon");
+    // in this section, it basically finds the bg music and the play/pause icon
+
+    window.addEventListener('load', () => {
+        music.volume = 0.4;
+        music.play().catch(() => {});
+        //this section plays the music up to 40%, if the site blocks the autoplay thing, it will ignore the error with the .catch code
+    });
+
+    function toggleMusic() {
+        // it switched between play and pause, whatever the user clicks
+        if (music.paused) {
+            music.play();
+            icon.textContent = "🛑";
+        } else {
+            music.pause();
+            icon.textContent = '🟢'
+        
+        }
+    }
+
+</script>
+<!-- the navigation bar for the user to easily click on the games to view -->
+ <nav>
+    <ul>
+        <li><a href="A2 home.html">Home</a></li>
+        <li><a href="A2 SP1.html">Marvel's Spiderman</a></li>
+        <li><a href="A2 SP2.html">Marvel's Spiderman 2</a></li>
+        <li><a href="A2 L1.html">The Last of Us Part I</a></li>
+        <li><a href="A2 L2.html">The Last of Us Part II</a></li>
+        <li><a href="A2 COD.html">Call of Duty Modern Warfare</a></li>
+    </ul>
+ </nav>
+
+ <section class="intro">
+    <div style="text-align: center;">
+        <img src="logo.png" style = "height: 80px; margin-top: 40px; margin-bottom: 0px;">
+        <h2>Welcome to GLITCH</h2>
+    </div>
+    <p>Welcome to GLITCH in which we rate games on PS5 that have greatly impacted the gaming generation. This site shows the Top 5 games of all time! Each page contains the game summary, the characters, their voice actors, and most importantly the reviews. Are you thrilled to see the Top 5 games? Whether it may be your favorite or not, we'll see *drum rolls*</p>
+ </section>
+
+ <section class="top-games">
+    <h3>TOP 5 GAMES</h3>
+    <div class="game-list">
+        <!-- container for the games picture, title, and once clicked it will lead you to the other site-->
+        <div class="game-item">
+            <a href="A2 SP1.html">
+                <img src="SP1.jpg">
+                <h4>Marvel's Spiderman</h4>
+            </a>
+        </div>
+
+        <div class="game-item">
+            <a href="A2 SP2.html">
+                <img src="SP2.jpg">
+                <h4>Marvel's Spiderman 2</h4>
+            </a>
+        </div>
+
+        <div class="game-item">
+            <a href="A2 L1.html">
+                <img src="L1.jpg">
+                <h4>The Last of Us Part I</h4>
+            </a>
+        </div>
+
+        <div class="game-item">
+            <a href="A2 L2.html">
+                <img src="L2.jpg">
+                <h4>The Last of Us Part II</h4>
+            </a>
+        </div>
+
+        <div class="game-item">
+            <a href="A2 COD.html">
+                <img src="COD.jpg">
+                <h4>Call of Duty Modern Warfare</h4>
+            </a>
+        </div>
+    </div>
+ </section>
+
+
+ <!-- for the copyright -->
+ <footer>
+    <p>&copy; 2025 GLITCH. All rights reserved.</p>
+ </footer>
+</body>
+</html>
+
+

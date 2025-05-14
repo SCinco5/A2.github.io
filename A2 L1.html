@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="A2 STYLE.css" type="text/css">
+    <!-- external css file -->
+    <title>The Last of Us Part I</title>
+</head>
+<body>
+    <header></header>
+
+    <audio id="bg-music" src="Love Like You - Steven Universe (music box cover).mp3" loop></audio>
+ <div class ='music-toggle' onclick="toggleMusic()">
+    <span id = 'music-icon'>🛑</span>
+ </div>
+
+<script>
+    const music= document.getElementById("bg-music");
+    const icon= document.getElementById("music-icon");
+    // in this section, it basically finds the bg music and the play/pause icon
+
+    window.addEventListener('load', () => {
+        music.volume = 0.4;
+        music.play().catch(() => {});
+        //this section plays the music up to 40%, if the site blocks the autoplay thing, it will ignore the error with the .catch code
+    });
+
+    function toggleMusic() {
+        // it switched between play and pause, whatever the user clicks
+        if (music.paused) {
+            music.play();
+            icon.textContent = "🛑";
+        } else {
+            music.pause();
+            icon.textContent = '🟢'
+        
+        }
+    }
+
+</script>
+
+ <nav>
+    <ul>
+        <li><a href="A2 home.html">Home</a></li>
+        <li><a href="A2 SP1.html">Marvel's Spiderman</a></li>
+        <li><a href="A2 SP2.html">Marvel's Spiderman 2</a></li>
+        <li><a href="A2 L1.html">The Last of Us Part I</a></li>
+        <li><a href="A2 L2.html">The Last of Us Part II</a></li>
+        <li><a href="A2 COD.html">Call of Duty Modern Warfare</a></li>
+    </ul>
+ </nav>
+
+ <section class="game-review">
+    <h2 class="game-title">The Last of Us Part I</h2>
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/WxjeV10H1F0" allowfullscreen></iframe>
+    </div>
+ </section>
+
+ <div class="game-content">
+     <p class="onli-sub"><strong>Summary</strong></p>
+     <p>Set in the post-apocalyptic United States, the game tells the story of survivors Joel and Ellie as they work together to survive their westward journey across what remains of the country to find a possible cure for the modern fungal plague that has nearly decimated the entire human race.</p>
+
+     <p class="onli-sub"><strong>Characters and their Voice Actors</strong></p>
+     <!-- this section showcases the bulleted list of all the characters and voice actors -->
+     <ul>
+         <li>Troy Baker as Joel</li>
+         <li>Ashley Johnson as Ellie</li>
+         <li>Hana Hayes as Sarah</li>
+         <li>Jeffrey Pierce as Tommy</li>
+         <li>Annie Wersching as Tess</li>
+         <li>Robin Atkin Downes as Robert</li>
+         <li>Merle Dandridge as Marlene</li>
+         <li>W. Earl Brown as Bill (as W Earl Brown)</li>
+         <li>Brandon Scott as Henry</li>
+         <li>Nadji Jeter as Sam</li>
+         <li>Ashley Scott as Maria</li>
+         <li>Reuben Langdon as James</li>
+         <li>Nolan North as David</li>
+      </ul>
+
+    
+
+     <p class="onli-sub"><strong>Review</strong></p>
+     <p>A gorgeous and well-honed remake of one of the biggest boppers in the PlayStation pantheon, The Last of Us Part I is the best way to play – or replay – Naughty Dog’s esteemed survival classic. The striking improvements it makes to its completely rebuilt world are complemented by the subtle refinements of its characters’ performances, and while it isn’t retrofitted with every one of the sequel’s best changes, the upgrades to movement and AI make a welcome difference in an already outstanding game. It’s harder to argue it was an entirely crucial remake, though, considering 2014’s The Last of Us Remastered still stands head and shoulders above nearly all of its story-driven, action-adventure peers to this day.</p>
+ </div>
+</section>
+
+
+ <footer>
+    <p>&copy; 2025 GLITCH. All rights reserved.</p>
+ </footer>
+</body>
+</html>

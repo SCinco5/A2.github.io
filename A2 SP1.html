@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="A2 STYLE.css" type="text/css">
+    <!-- external css file -->
+    <title>Marvel's Spiderman</title>
+</head>
+<body>
+    <header></header>
+
+ <audio id="bg-music" src="Love Like You - Steven Universe (music box cover).mp3" loop></audio>
+ <div class ='music-toggle' onclick="toggleMusic()">
+    <!-- a clickable button for the user to either play them or pause -->
+    <span id = 'music-icon'>🛑</span>
+ </div>
+
+ <!-- javascript -->
+<script>
+    const music= document.getElementById("bg-music");
+    const icon= document.getElementById("music-icon");
+    // in this section, it basically finds the bg music and the play/pause icon
+
+    window.addEventListener('load', () => {
+        music.volume = 0.4;
+        music.play().catch(() => {});
+        //this section plays the music up to 40%, if the site blocks the autoplay thing, it will ignore the error with the .catch code
+    });
+
+    function toggleMusic() {
+        // it switched between play and pause, whatever the user clicks
+        if (music.paused) {
+            music.play();
+            icon.textContent = "🛑";
+        } else {
+            music.pause();
+            icon.textContent = '🟢'
+        
+        }
+    }
+
+</script>
+
+ <nav>
+    <ul>
+        <li><a href="A2 home.html">Home</a></li>
+        <li><a href="A2 SP1.html">Marvel's Spiderman</a></li>
+        <li><a href="A2 SP2.html">Marvel's Spiderman 2</a></li>
+        <li><a href="A2 L1.html">The Last of Us Part I</a></li>
+        <li><a href="A2 L2.html">The Last of Us Part II</a></li>
+        <li><a href="A2 COD.html">Call of Duty Modern Warfare</a></li>
+    </ul>
+ </nav>
+
+ <section class="game-review">
+    <h2 class="game-title">Marvel's Spiderman</h2>
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/Pq02p3z3X2k" allowfullscreen></iframe>
+    </div>
+ </section>
+
+ <div class="game-content">
+     <p class="onli-sub"><strong>Summary</strong></p>
+     <p>The game follows Peter Parker, a 23-year-old college graduate and research assistant who gained superhuman abilities after being bitten by a radioactive spider. Peter is in his eighth year of crime-fighting under his super heroic alter ego of Spider-Man, who has become highly experienced at this point, but struggles to balance his superhero and personal lives. The game's open-world sandbox allows the player to control Spider-Man throughout Manhattan, New York City. Spider-Man fights enemies with his brawler moveset and a wide array of web gadgets. At key points in the story, the player also controls Peter Parker (outside of his Spider-Man identity), Mary Jane Watson, and Miles Morales.</p>
+
+     <p class="onli-sub"><strong>Characters and their Voice Actors</strong></p> 
+     <!-- this section showcases the bulleted list of all the characters and voice actors -->
+     <ul>
+         <li>Yuri Lowenthal as Peter Parker/Spider-Man</li>
+         <li>Tara Platt as Yuri Watanabe</li>
+         <li>William Salyers as Otto Octavius</li>
+         <li>Darin De Paul as J. Jonah Jameson</li>
+         <li>Nancy Linari as May Parker</li>
+         <li>Stephen Oyoung as Martin Li / Mister Negative</li>
+         <li>Laura Bailey as Mary Jane</li>
+         <li>Mark Rolston as Norman Osborn</li>
+         <li>Russell Richardson as Jefferson Davis</li>
+         <li>Nadji Jeter as Miles Morales</li>
+         <li>Jacqueline Pinol as Rio Morales</li>
+         <li>Nichole Elise as Silver Sable</li>
+         <li>Corey Jones as Tombstone</li>
+         <li>Brian Bloom as Taskmaster</li>
+         <li>Phil Morris as Dr. Morgan Michaels</li>
+         <li>Josh Keaton as Electro</li>
+      </ul>
+
+
+     <p class="onli-sub"><strong>Review</strong></p>
+     <p>Marvel's Spider-Man received positive reviews from critics. Reviewers praised the web-slinging and exploration mechanic, the combat with web gadgets, the storytelling, presentation, and boss battles, while criticizing the pacing, repetition in side missions, and sometimes familiar story beats.</p>
+      <p>Critics broadly praised the web-slinging mechanic, and the exploration around New York City. Edmond Tran of GameSpot called the web-slinging mechanic "sensational", describing swinging around New York as "endlessly fulfilling", due to not being demanding on button inputs yet still feeling "satisfyingly manual" thanks to the weight feel of Spider-Man and adjustments that need to be made in motion. Chelsea Stark writing for Polygon also praised the web-slinging around Manhattan, claiming that the "breezy" movement flinging through the sky "never gets old", and that she would swing with webs to reach distant locations even after fast travel unlocked. Chris Carter writing for Destructoid described web-slinging as "arguably the most important element of [developing] a Spider-Man game", and said that Insomniac Games "nailed" the mechanics, comparing it to "arcade realism".</p>
+      <p>Combat was praised, particularly in regards to the variety of web gadgets and combat techniques, and compared favorable to the Batman: Arkham series. Jonathon Dornbush of IGN praised the "methodical thrill" of choosing orders in which to web up enemies and which web gadgets to use, as well as the enemy variety that involved strategy, calling the combat an "improvisational delight" while also saying it owes a lot to the Arkham series. Chelsea Stark of Polygon praised the variety of techniques, moves, and gadgets, and stating that the real challenge lies with finding the players' favorite arsenal and implementing it, calling the combat "rewarding". Edmond Tran of GameSpot said the "Arkham Asylum-inspired crowd fighting system suitably characterizes Spidey's acrobatic nature", stating that mixing up web gadgets, combat techniques, and timing actions right kept combat interesting.</p>
+      <p>The storytelling was mostly praised, with some citing pacing issues. Leon Hurley of GamesRader+ said that this incarnation of Spider-Man was "instantly likeable and a worthy addition to the Spider-Man canon", praising him as "charming but human" which led to comedic moments, while praising the rest of the cast. Jonathon Dornbush of IGN stated that the story consistently delivers a "sense of weight and impact", praising the time for villains to "believably develop", and giving particular praise to Peter's mentor relationship with Miles Morales and romantic relationship with Mary Jane, which he called one of his "favorite romances in a game ever". However, he criticized the "slow start" and "odd pacing issues". Edward Tran of GameSpot compared the story to Marvel Cinematic Universe films and praised Insomniac's focus on the "human side of the tale", calling it "emotionally charged", and saying that it is "shocking how devastating the events can feel" even though they are familiar to fans of the comic book series.</p>
+      <p>The game was mostly criticized for adhering to open world cliches, mostly referring to side missions, and radio towers. Leon Hurley of GamesRadar+ said that the challenges felt "lifted straight out of the Open World Side Mission Handbook", saying that these challenges felt fun due to the underlying mechanics, though the narrative side missions and Research Stations were a "mixed bag". Edward Tran of GameSpot said that the side quests "don't have the same narrative energy as the main throughline, which makes them much less compelling", and that they felt "uninspired", "strange at best", and "menial at worst", calling them "repetitive". Jonathan Durnbush of IGN said that side missions "helped bring the world of Spider-Man and its open New York City to life", but "don't quite live up to the heft of the main story", and said that stopping crimes and fighting hordes of enemies eventually began to feel like a "repetitive, going-through-the-motions activity" and a nuisance during progress to the next main activity.</p>
+ </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 GLITCH. All rights reserved.</p>
+</footer>
+</body>
+</html>
